@@ -1,0 +1,70 @@
+ESTRUTURA DE ARQUIVOS
+    sitefLibFactoty.js
+    transactionFactory.js
+    requestFactory.js
+    servicesFactory.js
+    sitefTablesFactory.js
+    typesFactory.js
+
+
+
+
+
+ESTRUTURA DE FUNÇÕES
+nXSitefLib.js
+    iniciarNxSitefLib(config)
+        iniciarPagamentoCredito(pagamento)
+        iniciarPagamentoDebito(pagamento)
+        iniciarPagamentoPix(pagamento)
+        iniciarCancelamentoCredito(pagamento)
+        iniciarCancelamentoDebito(pagamento)
+        iniciarCancelamentoPix(pagamento)
+        iniciarAuxiliar()
+
+controller.js
+    iniciarController(config, pagamento)
+        getPagamentoGenerico()
+        getPagamentoCredito()
+        getPagamentoDebito()
+        getPagamentoPix()
+        getCancelamentoCredito()
+        getCancelamentoDebito()
+        getCancelamentoPix()
+
+transactionFactory.js
+    iniciarTransaction()
+
+sitefTables.js
+    iniciarSitefTables()
+
+requestFactory.js
+    montarStartTransactionRequest(config, pagamento)
+    montarContinueTransactionRequest(sessionId)
+    montarFinishTransactionRequest()
+
+services.js
+    startTransaction(startTransactionRequest)
+    continueTransaction(continueTransactionRequest)
+    finishTransaction(finishTransactionRequest)
+
+
+
+
+
+
+montaObjTransactionDebito()
+montaObjTransactionCredito()
+montaObjTransactionCancelamentoDebito()
+montaObjTransactionCancelamentoCredito()
+montaObjTransactionPix()
+montaObjTransactionCancelamento()
+
+startTransaction(obj)
+continueTransaction(obj)
+finishTransaction(obj)
+
+
+
+function 
+getStartTransactionRequestBody()
+getContinueTransactionRequest()
