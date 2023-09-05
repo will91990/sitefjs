@@ -1,4 +1,4 @@
-# sitefjs
+# sitef js
 
 Essa biblioteca implementa uma comunicação com o servidor Agente CliSiTef da empresa Software Express.
 Com essa biblioteca é possível tornar as transações Sitef muito mais transparentes, ou seja, com uma quantidade mínima de comandos é possível realizar operações de pagamento, cancelamento, etc...
